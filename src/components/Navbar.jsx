@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo2 from "../assets/logo2.png";
 import logo1 from "../assets/logo1.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,11 +33,13 @@ const Navbar = () => {
       <div className="container mx-auto py-4 px-6 md:px-0 lg:px-0 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img
-            src={scrolled ? logo1 : logo1}
-            alt="Logo"
-            className="w-32 transition duration-300"
-          />
+          <Link to="/">
+            <img
+              src={scrolled ? logo1 : logo1}
+              alt="Logo"
+              className="w-32 transition duration-300"
+            />
+          </Link>
         </div>
 
         {/* Hamburger Menu (Mobile) */}
@@ -76,14 +79,14 @@ const Navbar = () => {
             >
               Demos
             </a> */}
-            <a
-              href="#"
+            <Link
+              to="/about"
               className={`block lg:inline-block text-base ${
                 scrolled ? "text-white" : "text-white"
               } hover:text-orange-500 transition duration-300`}
             >
               About
-            </a>
+            </Link>
             {/* <a
               href="#"
               className={`block lg:inline-block text-base ${
@@ -92,14 +95,14 @@ const Navbar = () => {
             >
               Blog
             </a> */}
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className={`block lg:inline-block text-base ${
                 scrolled ? "text-white" : "text-white"
               } hover:text-orange-500 transition duration-300`}
             >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Register Button */}
