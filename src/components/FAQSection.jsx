@@ -46,8 +46,8 @@ const FAQWithImages = () => {
             className="rounded-lg shadow-lg"
           />
           <p className="text-white mt-4">
-            Explore modern coworking spaces designed for productivity and
-            collaboration.
+            {/* Explore modern coworking spaces designed for productivity and
+            collaboration. */}
           </p>
         </div>
 

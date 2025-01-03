@@ -35,7 +35,7 @@ const TeamOffices = () => {
             alt="Office Example"
             className="rounded-lg w-full"
           />
-          <div className="absolute top-3/2 -translate-y-1/2 -left-10 sm:-left-16 lg:-left-20 flex flex-col space-y-4">
+          <div className="absolute md:top-3/4 lg:top-3/2 top-1/2 -translate-y-1/2 -left-10 sm:-left-16 lg:-left-20 flex flex-col space-y-4">
             {teamSizes.map((size, index) => (
               <div
                 key={index}
