@@ -10,15 +10,15 @@ const Workspaces = () => {
       price: "$30.00/day",
       title: "Meeting Room",
       description:
-        "Collaborate and innovate in the Collaboration Hub, a dynamic space equipped for all your professional needs.",
+        "Conduct seamless and productive meetings in a professional and well-equipped meeting room.",
       buttonLabel: "View Deal",
     },
     {
       image: privatecabin,
       price: "$20.00/day",
-      title: "Private Cabine",
+      title: "Private Cabin",
       description:
-        "Host Professional Meetings in The Conference Suite - a state-of-the-art space designed for team collaboration.",
+        "Work in peace and privacy with a dedicated cabin designed for focus and productivity.",
       buttonLabel: "View Deal",
     },
     {
@@ -26,7 +26,7 @@ const Workspaces = () => {
       price: "$20.00/day",
       title: "Open Desk",
       description:
-        "Connect and network in this refreshing lounge - a stylish and comfortable setting for all professionals.",
+        "Enjoy flexibility and networking opportunities with a shared, open desk setup.",
       buttonLabel: "View Deal",
     },
     {
@@ -34,9 +34,10 @@ const Workspaces = () => {
       price: "$20.00/day",
       title: "Collaborative Desk",
       description:
-        "Bringing Together Complete Tools and Features to Meet All Your Workspace Needs.",
+        "Foster teamwork and innovation with desks designed for collaborative work.",
       buttonLabel: "View Deal",
     },
+
     // {
     //   image: "https://via.placeholder.com/300",
     //   price: "$20.00/day",

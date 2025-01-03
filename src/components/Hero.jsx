@@ -49,7 +49,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-semibold text-white md:mb-4 mb-2">
             A Spaces For{" "}
             <span
-              className={`inline-block mt-2 font-semibold text-orange-500 transform transition-all duration-500 ${
+              className={`inline-block mt-0 md:mt-2 lg:mt-2 font-semibold text-orange-500 transform transition-all duration-500 ${
                 animate
                   ? "translate-y-full opacity-0"
                   : "translate-y-0 opacity-100"
@@ -59,9 +59,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-white text-sm md:text-base">
-            From cost savings to increased collaboration opportunities,
-            coworking spaces can make for ideal offices, especially for small
-            and growing businesses.
+            Coworking spaces offer cost savings and foster collaboration, making
+            them ideal for small and growing businesses.
           </p>
         </div>
       </div>

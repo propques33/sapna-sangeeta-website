@@ -49,8 +49,11 @@ const Amenities = () => {
   return (
     <div className="bg-white py-12 px-6">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold ">
-          Our <span className="text-orange-500 font-semibold">Amenities</span>
+        <h2 className="md:text-4xl lg:text-4xl text-3xl font-semibold ">
+          Our{" "}
+          <span className="text-orange-500 font-semibold md:text-4xl lg:text-4xl text-3xl">
+            Amenities
+          </span>
         </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
