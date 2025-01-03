@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroForm from "./HeroForm";
 import heroimg from "../assets/heroimg.jpg";
 
 const Hero = () => {
+  const [dynamicWord, setDynamicWord] = useState("Opportunity");
+  const [animate, setAnimate] = useState(false);
+
+  const words = [
+    "Opportunity",
+    "Success",
+    "Innovation",
+    "Collaboration",
+    "Growth",
+  ];
+
+  useEffect(() => {
+    let wordIndex = 0;
+    const interval = setInterval(() => {
+      setAnimate(true);
+      setTimeout(() => {
+        wordIndex = (wordIndex + 1) % words.length;
+        setDynamicWord(words[wordIndex]);
+        setAnimate(false);
+      }, 500); // Match with animation duration
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
-      className="flex flex-col relative md:flex-row bg-gray-50 h-screen  "
+      className="flex flex-col relative md:flex-row bg-gray-50 h-screen"
       style={{
         backgroundImage: `url(${heroimg})`,
         backgroundSize: "cover",
@@ -13,7 +38,8 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="w-full   h-full md:bg-gradient-to-t md:from-black md:to-transparent lg:to-transparent bg-gradient-to-b from-black to-[#000000b0]  absolute "></div>
+      <div className="w-full h-full md:bg-gradient-to-t md:from-black md:to-transparent lg:to-transparent bg-gradient-to-b from-black to-[#000000b0] absolute"></div>
+
       {/* Left Section: Hero Image with Text */}
       <div className="w-full z-10 md:w-1/2 h-1/2 md:h-full md:pt-0 pt-20">
         <div className="h-full w-full flex flex-col justify-center items-start px-10">
@@ -21,9 +47,18 @@ const Hero = () => {
             Coworking Space
           </div>
           <h1 className="text-4xl md:text-6xl font-semibold text-white md:mb-4 mb-2">
-            Your Next Great Idea Starts Here!
+            A Spaces For{" "}
+            <span
+              className={`inline-block mt-2 font-semibold text-orange-500 transform transition-all duration-500 ${
+                animate
+                  ? "translate-y-full opacity-0"
+                  : "translate-y-0 opacity-100"
+              }`}
+            >
+              {dynamicWord}
+            </span>
           </h1>
-          <p className="text-white text-sm md:text-xl">
+          <p className="text-white text-sm md:text-base">
             From cost savings to increased collaboration opportunities,
             coworking spaces can make for ideal offices, especially for small
             and growing businesses.
