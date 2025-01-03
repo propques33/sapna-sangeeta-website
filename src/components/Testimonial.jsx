@@ -1,33 +1,38 @@
 import React from "react";
-
+import di from '../assets/di.png'
+import adi from '../assets/adi.png'
+import sheetal from '../assets/sheetal.png'
 const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Sheetal Gaikwad",
       company: "Johnson",
-      feedback: "Our entire team loved the offices",
-      rating: 4,
-      date: "7 days ago",
-      avatar: "https://via.placeholder.com/50", // Replace with actual avatar URL
+      feedback:
+        "Awesome place to work.. looks nice and people who work there are friendly... Totally recommend it..",
+      rating: 5,
+      date: "11 months ago",
+      avatar: sheetal, // Replace with actual avatar URL
     },
     {
       id: 2,
-      name: "Peter Brown",
+      name: "Dilip Ahuja",
       company: "Brown",
-      feedback: "Great prices and excellent service",
+      feedback:
+        "Great work environment...services they provide are just awesome...perfect for office vibe",
       rating: 5,
-      date: "7 days ago",
-      avatar: "https://via.placeholder.com/50", // Replace with actual avatar URL
+      date: "1 year ago",
+      avatar: di // Replace with actual avatar URL
     },
     {
       id: 3,
-      name: "John Smith",
+      name: "Aditya Chouhan",
       company: "Smith Industries",
-      feedback: "Excellent selection of office spaces available",
+      feedback:
+        "Great place to work...Housekeeping is dedicated and experienced in their work",
       rating: 5,
-      date: "7 days ago",
-      avatar: "https://via.placeholder.com/50", // Replace with actual avatar URL
+      date: "1 year ago",
+      avatar: adi, // Replace with actual avatar URL
     },
   ];
 
@@ -43,7 +48,7 @@ const Testimonials = () => {
         </h2>
         <div className="flex justify-center gap-8 mt-4">
           <p className="text-gray-700 flex items-center">
-            <span className="text-green-600 mr-2">✅</span> 10K+ Customers
+            <span className="text-green-600 mr-2">✅</span> 10+ Customers
           </p>
           <p className="text-gray-700 flex items-center">
             <span className="text-green-600 mr-2">✅</span> 99% Satisfaction
@@ -62,10 +67,10 @@ const Testimonials = () => {
               <img
                 src={testimonial.avatar}
                 alt={testimonial.name}
-                className="w-12 h-12 rounded-full mr-4"
+                className="w-12 h- rounded-full mr-4"
               />
               <div>
-                <p className="font-bold text-gray-800">{testimonial.name}</p>
+                <p className="font-semibold text-gray-800">{testimonial.name}</p>
                 <p className="text-sm text-gray-500">{testimonial.company}</p>
               </div>
             </div>

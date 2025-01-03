@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src={scrolled ? logo1 : logo2}
+            src={scrolled ? logo1 : logo1}
             alt="Logo"
             className="w-32 transition duration-300"
           />
@@ -68,14 +68,14 @@ const Navbar = () => {
 
           {/* Links */}
           <div className="lg:flex lg:items-center lg:space-x-6 space-y-4 lg:space-y-0 text-center lg:text-right">
-            <a
+            {/* <a
               href="#"
               className={`block lg:inline-block text-base ${
                 scrolled ? "text-white" : "text-white"
               } hover:text-orange-500 transition duration-300`}
             >
               Demos
-            </a>
+            </a> */}
             <a
               href="#"
               className={`block lg:inline-block text-base ${
@@ -84,14 +84,14 @@ const Navbar = () => {
             >
               About
             </a>
-            <a
+            {/* <a
               href="#"
               className={`block lg:inline-block text-base ${
                 scrolled ? "text-white" : "text-white"
               } hover:text-orange-500 transition duration-300`}
             >
               Blog
-            </a>
+            </a> */}
             <a
               href="#"
               className={`block lg:inline-block text-base ${

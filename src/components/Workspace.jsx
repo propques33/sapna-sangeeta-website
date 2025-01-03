@@ -1,55 +1,58 @@
 import React from "react";
-
+import meetingImg from '../assets/heroimg.jpg'
+import privatecabin from "../assets/privatecabin.jpeg";
+import opendesk from "../assets/opendesk.jpeg";
+import collabdesk from "../assets/collabdesk.jpeg";
 const Workspaces = () => {
   const workspaces = [
     {
-      image: "https://via.placeholder.com/300",
+      image: meetingImg,
       price: "$30.00/day",
-      title: "01-The Collaboration Hub",
+      title: "01-Meeting Room",
       description:
         "Collaborate and innovate in the Collaboration Hub, a dynamic space equipped for all your professional needs.",
       buttonLabel: "View Deal",
     },
     {
-      image: "https://via.placeholder.com/300",
+      image: privatecabin,
       price: "$20.00/day",
-      title: "02-The Conference Suite",
+      title: "02-Private Cabine",
       description:
         "Host Professional Meetings in The Conference Suite - a state-of-the-art space designed for team collaboration.",
       buttonLabel: "View Deal",
     },
     {
-      image: "https://via.placeholder.com/300",
+      image: opendesk,
       price: "$20.00/day",
-      title: "03-The Networking Lounge",
+      title: "03-Open Desk",
       description:
         "Connect and network in this refreshing lounge - a stylish and comfortable setting for all professionals.",
       buttonLabel: "View Deal",
     },
     {
-      image: "https://via.placeholder.com/300",
+      image: collabdesk,
       price: "$20.00/day",
-      title: "04-The Works Suite",
+      title: "04-Collaborative Desk",
       description:
         "Bringing Together Complete Tools and Features to Meet All Your Workspace Needs.",
       buttonLabel: "View Deal",
     },
-    {
-      image: "https://via.placeholder.com/300",
-      price: "$20.00/day",
-      title: "05-Workspace Green",
-      description:
-        "Combining Functionality and Eco-Friendly Practices to Create a Sustainable Workspace Experience.",
-      buttonLabel: "View Deal",
-    },
-    {
-      image: "https://via.placeholder.com/300",
-      price: "$20.00/day",
-      title: "06-The Conference Private",
-      description:
-        "Where Privacy Meets Professionalism in a Space Designed for High-impact Meetings.",
-      buttonLabel: "View Deal",
-    },
+    // {
+    //   image: "https://via.placeholder.com/300",
+    //   price: "$20.00/day",
+    //   title: "05-Workspace Green",
+    //   description:
+    //     "Combining Functionality and Eco-Friendly Practices to Create a Sustainable Workspace Experience.",
+    //   buttonLabel: "View Deal",
+    // },
+    // {
+    //   image: "https://via.placeholder.com/300",
+    //   price: "$20.00/day",
+    //   title: "06-The Conference Private",
+    //   description:
+    //     "Where Privacy Meets Professionalism in a Space Designed for High-impact Meetings.",
+    //   buttonLabel: "View Deal",
+    // },
   ];
 
   return (
@@ -63,7 +66,7 @@ const Workspaces = () => {
           meet your needs and designed to promote productivity.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {workspaces.map((workspace, index) => (
           <div
             key={index}
@@ -72,7 +75,7 @@ const Workspaces = () => {
             <img
               src={workspace.image}
               alt={workspace.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-80 object-cover"
             />
             <div className="p-4">
               <div className="flex justify-between items-center">

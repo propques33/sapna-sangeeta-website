@@ -1,38 +1,51 @@
 import React, { useState } from "react";
+import meetingImg from "../assets/heroimg.jpg";
 
 const FAQWithImages = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
 
   const faqs = [
     {
-      question: "What is a coworking space?",
+      question: "What are the office timings?",
       answer:
-        "A coworking space is a shared workspace that provides a professional environment and amenities for individuals and teams.",
+        "Our Sapna Sangeeta offices are open from 9 AM to 8 PM, Monday through Saturday.",
     },
     {
-      question: "What amenities are provided?",
+      question: "What amenities are available?",
       answer:
-        "Our coworking spaces offer high-speed Wi-Fi, meeting rooms, comfortable seating, refreshments, and more.",
+        "The Sapna Sangeeta offices provide high-speed Wi-Fi, private cabins, meeting rooms, refreshments, and ample parking space.",
     },
     {
-      question: "Can I book a coworking space for a day?",
+      question: "Can I book a meeting room for an hour?",
       answer:
-        "Yes, most of our coworking spaces offer flexible booking options, including daily and hourly passes.",
+        "Yes, our Sapna Sangeeta offices offer hourly booking options for meeting rooms.",
     },
     {
-      question: "Do coworking spaces have private rooms?",
+      question: "Is there a cafeteria in the office?",
       answer:
-        "Yes, many coworking spaces include private offices and meeting rooms for confidential work and discussions.",
+        "Yes, we have a cafeteria with a variety of food and beverage options to keep you refreshed throughout the day.",
     },
+
+    {
+      question: "Do you have printing and scanning facilities?",
+      answer:
+        "Yes, our office is equipped with printing and scanning facilities for your convenience.",
+    },
+    {
+      question: "Are there private lockers available?",
+      answer:
+        "Yes, private lockers are available to securely store your belongings.",
+    },
+   
   ];
 
   return (
     <div className="bg-black  py-12 px-6">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-white">Coworking Space FAQs</h1>
+        <h1 className="text-4xl font-semibold text-white">Sapna Sangeeta Office FAQs</h1>
         <p className="text-orange-300 mt-4">
-          Find answers to your questions about coworking spaces
+          Find answers to your questions about our Sapna Sangeeta offices
         </p>
       </div>
 
@@ -41,8 +54,8 @@ const FAQWithImages = () => {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 md:mr-10 lg:mr-10">
           <img
-            src="https://via.placeholder.com/600x400" // Replace with an actual image URL
-            alt="Coworking Space"
+            src={meetingImg} // Replace with an actual image URL
+            alt="Sapna Sangeeta Office"
             className="rounded-lg shadow-lg"
           />
           <p className="text-white mt-4">
@@ -62,7 +75,7 @@ const FAQWithImages = () => {
               className="bg-white rounded-lg shadow-lg p-4 mb-4 cursor-pointer"
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold text-orange-500">
+                <h3 className="text-lg font-medium text-orange-500">
                   {faq.question}
                 </h3>
                 <span

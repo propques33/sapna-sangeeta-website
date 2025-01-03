@@ -4,7 +4,7 @@ const MembershipOptions = () => {
   const memberships = [
     {
       title: "Hot Desk",
-      price: "₹500 / Seat!",
+      price: "₹5000 / Seat!",
       features: [
         "Sitting space",
         "12/6 access",

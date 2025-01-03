@@ -62,7 +62,8 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-bold text-white mb-4">Address</h4>
           <p className="text-sm mb-6">
-            Sapna Sangeeta Road, Swadesh Nagar, Indore, Madhya Pradesh, 452001
+            3rd Floor, Sapna Sangeeta Mall, Sapna Sangeeta Rd, Indore, Madhya
+            Pradesh 452001
           </p>
           <div className="flex space-x-4">
             <a
@@ -96,7 +97,8 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
         <p>
-          All Rights Reserved @ SapnaSangeeta Offices 2025 | Powered By Propques
+          All Rights Reserved @ SapnaSangeeta 2025 | Powered By{" "}
+          <a href="https://propques.com/">Propques</a>
         </p>
       </div>
     </footer>

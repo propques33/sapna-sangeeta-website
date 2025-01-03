@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUsers } from "react-icons/fa";
+import opendesk from "../assets/opendesk.jpeg";
 
 const TeamOffices = () => {
   const teamSizes = [
@@ -23,7 +24,7 @@ const TeamOffices = () => {
           more.
         </p>
         <button className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600">
-          Browse All
+          Book Now
         </button>
       </div>
 
@@ -31,7 +32,7 @@ const TeamOffices = () => {
       <div className="lg:w-1/2 flex flex-col items-end justify-center">
         <div className="relative w-full max-w-xs sm:max-w-sm lg:w-80 h-auto">
           <img
-            src="https://via.placeholder.com/300" // Replace with the actual image URL
+            src={opendesk} // Replace with the actual image URL
             alt="Office Example"
             className="rounded-lg w-full"
           />

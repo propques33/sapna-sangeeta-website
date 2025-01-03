@@ -9,6 +9,7 @@ import Testimonial from './components/Testimonial.jsx'
 import FAQSection from './components/FAQSection.jsx'
 import MembershipOptions from './components/MembershipOptions.jsx'
 import FooterHeroSection from './components/FooterHeroSection.jsx'
+import LocationMap from './components/LocationMap.jsx'
 import Footer from './components/Footer.jsx'
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <TeamOffices />
       <MembershipOptions />
       <Testimonial />
+      <LocationMap />
       <FAQSection />
       <FooterHeroSection />
       <Footer />

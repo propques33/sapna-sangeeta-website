@@ -9,7 +9,7 @@ const HeroForm = () => {
         <div className="">
           <form className="space-y-4">
             {/* Name Input */}
-            <div className="flex items-center bg-gray-100 rounded-md p-2">
+            <div className="flex items-center md:text-base text-sm bg-gray-100 rounded-md p-2">
               <FiUser className="text-gray-500 text-xl mr-2" />
               <input
                 type="text"
@@ -19,7 +19,7 @@ const HeroForm = () => {
             </div>
 
             {/* Mobile Number Input */}
-            <div className="flex items-center bg-gray-100 rounded-md p-2">
+            <div className="flex items-center md:text-base text-sm bg-gray-100 rounded-md p-2">
               <FiPhone className="text-gray-500 text-xl mr-2" />
               <input
                 type="tel"
@@ -28,9 +28,8 @@ const HeroForm = () => {
               />
             </div>
 
-       
             {/* Dropdown for Coworking Space Type */}
-            <div className="bg-gray-100 rounded-md p-2">
+            <div className="bg-gray-100 rounded-md p-2 md:text-base text-sm">
               <select
                 className="w-full bg-transparent outline-none text-gray-700 placeholder-gray-500"
                 defaultValue=""
@@ -48,7 +47,7 @@ const HeroForm = () => {
             {/* Get Started Button */}
             <button
               type="submit"
-              className="w-full bg-orange-500 text-white py-3 rounded-md hover:bg-orange-600 transition duration-300"
+              className="w-full md:text-base text-sm bg-orange-500 text-white md:py-3 py-2 rounded-md hover:bg-orange-600 transition duration-300"
             >
               Let{"'"}s Talk
             </button>
