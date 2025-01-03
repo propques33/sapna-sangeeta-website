@@ -6,24 +6,19 @@ const FAQWithImages = () => {
 
   const faqs = [
     {
+      question: "Why Sapna Sangeeta Offices",
+      answer:
+        "Inside Sapna Sangeeta Mall, a prime Indore landmark since 1985, offers a classic yet youthful experience in the serene locales of Sneh Nagar and Agrawal Nagar. Over 39 years, it has become a cultural hub, blending nostalgia with modern vibes, captivating generations of moviegoers.",
+    },
+    {
       question: "What are the office timings?",
       answer:
-        "Our Sapna Sangeeta offices are open from 9 AM to 8 PM, Monday through Saturday.",
+        "Our Sapna Sangeeta offices are open from 9:30 AM to 7:30 PM, Monday through Saturday.",
     },
     {
       question: "What amenities are available?",
       answer:
         "The Sapna Sangeeta offices provide high-speed Wi-Fi, private cabins, meeting rooms, refreshments, and ample parking space.",
-    },
-    {
-      question: "Can I book a meeting room for an hour?",
-      answer:
-        "Yes, our Sapna Sangeeta offices offer hourly booking options for meeting rooms.",
-    },
-    {
-      question: "Is there a cafeteria in the office?",
-      answer:
-        "Yes, we have a cafeteria with a variety of food and beverage options to keep you refreshed throughout the day.",
     },
 
     {
@@ -31,12 +26,8 @@ const FAQWithImages = () => {
       answer:
         "Yes, our office is equipped with printing and scanning facilities for your convenience.",
     },
-    {
-      question: "Are there private lockers available?",
-      answer:
-        "Yes, private lockers are available to securely store your belongings.",
-    },
-   
+
+    
   ];
 
   return (

@@ -32,21 +32,10 @@ const HeroSection = () => {
       </div>
 
       {/* Floating Images */}
-      <div className="absolute flex justify-between items-center w-full px-6 top-1/3">
-        <img
-          src={cafe} // Replace with your image URL
-          alt="Workspace 1"
-          className="w-48 h-36 rounded-lg shadow-lg transform rotate-6 object-cover"
-        />
-        <img
-          src={collabdesk} // Replace with your image URL
-          alt="Workspace 2"
-          className="w-48 h-36 rounded-lg shadow-lg object-cover transform -rotate-6"
-        />
-      </div>
+     
 
       {/* Bottom Accent */}
-      <div className="absolute bottom-0 right-0 w-20 h-20 bg-orange-600"></div>
+      {/* <div className="absolute bottom-0 right-0 w-20 h-20 bg-orange-600"></div> */}
     </div>
   );
 };
