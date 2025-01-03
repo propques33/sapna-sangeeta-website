@@ -1,14 +1,14 @@
 import React from "react";
-import meetingImg from '../assets/heroimg.jpg'
+import meetingImg from "../assets/meetingroom.jpeg";
 import privatecabin from "../assets/privatecabin.jpeg";
 import opendesk from "../assets/opendesk.jpeg";
-import collabdesk from "../assets/collabdesk.jpeg";
+import collabdesk from "../assets/collab.jpeg";
 const Workspaces = () => {
   const workspaces = [
     {
       image: meetingImg,
       price: "$30.00/day",
-      title: "01-Meeting Room",
+      title: "Meeting Room",
       description:
         "Collaborate and innovate in the Collaboration Hub, a dynamic space equipped for all your professional needs.",
       buttonLabel: "View Deal",
@@ -16,7 +16,7 @@ const Workspaces = () => {
     {
       image: privatecabin,
       price: "$20.00/day",
-      title: "02-Private Cabine",
+      title: "Private Cabine",
       description:
         "Host Professional Meetings in The Conference Suite - a state-of-the-art space designed for team collaboration.",
       buttonLabel: "View Deal",
@@ -24,7 +24,7 @@ const Workspaces = () => {
     {
       image: opendesk,
       price: "$20.00/day",
-      title: "03-Open Desk",
+      title: "Open Desk",
       description:
         "Connect and network in this refreshing lounge - a stylish and comfortable setting for all professionals.",
       buttonLabel: "View Deal",
@@ -32,7 +32,7 @@ const Workspaces = () => {
     {
       image: collabdesk,
       price: "$20.00/day",
-      title: "04-Collaborative Desk",
+      title: "Collaborative Desk",
       description:
         "Bringing Together Complete Tools and Features to Meet All Your Workspace Needs.",
       buttonLabel: "View Deal",
@@ -66,7 +66,7 @@ const Workspaces = () => {
           meet your needs and designed to promote productivity.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {workspaces.map((workspace, index) => (
           <div
             key={index}
