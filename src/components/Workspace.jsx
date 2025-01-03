@@ -58,10 +58,10 @@ const Workspaces = () => {
   return (
     <div className="bg-gray- py-8 md:px-10 px-4">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="md:text-4xl lg:text-4xl text-3xl font-semibold">
           Find A <span className="font-semibold text-orange-500"> Workspace Near You</span>
         </h1>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 text-sm md:text-base">
           Discover a convenient and inspiring professional workspace tailored to
           meet your needs and designed to promote productivity.
         </p>

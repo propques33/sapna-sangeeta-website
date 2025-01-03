@@ -5,8 +5,9 @@ const LocationMap = () => {
     <div className="bg-black py-12 md:px-10 px-6 md:rounded-t-[0px] lg:rounded-t-[0px] ">
       {/* Header Section */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-white">
-          Find Us On The <span className="text-orange-500">Map.</span>
+        <h1 className="text-4xl font-semibold text-white">
+          Find Us On The{" "}
+          <span className="text-orange-500 font-semibold">Map.</span>
         </h1>
         <p className="text-orange-300 mt-4">Explore Our Exact Location Here!</p>
       </div>
