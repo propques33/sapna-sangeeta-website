@@ -53,10 +53,10 @@ const Footer = () => {
         {/* Pages */}
         <div>
           <h4 className="text-lg font-bold text-white mb-4">Pages</h4>
-          <ul className="space-y-3">
+          <ul className="space-y-3 flex flex-col">
             <li className="hover:text-orange-500 cursor-pointer">Home</li>
-            <li className="hover:text-orange-500 cursor-pointer">About Us</li>
-            <li className="hover:text-orange-500 cursor-pointer">Contact Us</li>
+            <Link to="/about" className="hover:text-orange-500 cursor-pointer">About Us</Link>
+            <Link to="/contact" className="hover:text-orange-500 cursor-pointer">Contact Us</Link>
             {/* <li className="hover:text-orange-500 cursor-pointer">
               Entertainment
             </li>
