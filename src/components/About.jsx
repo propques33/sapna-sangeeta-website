@@ -18,7 +18,9 @@ const AboutUs = () => {
     <div className="bg-black  text-white">
       {/* Hero Section */}
       <section className="relative text-center py-16 px-6  bg-black">
-        <h1 className="text-4xl font-bold text-orange-500 mt-20">About Us.</h1>
+        <h1 className="text-4xl font-bold text-orange-500 mt-20">
+          About Sapna Sangeeta Cinema
+        </h1>
         <p className="mt-4 text-lg">
           A landmark of cinema and business, merging creativity, fun, and
           commercial opportunities under one roof.

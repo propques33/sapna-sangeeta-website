@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUsers } from "react-icons/fa";
 import opendesk from "../assets/heroimg.jpg";
+import HeroForm from "./HeroForm"; // Import the HeroForm component
 
 const TeamOffices = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+
   const teamSizes = [
     { label: "For Single", range: "1/2 people" },
     { label: "For Small Teams", range: "5-20 people" },
@@ -38,35 +41,45 @@ const TeamOffices = () => {
           ))}
         </div>
 
-        <button className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600">
+        <button
+          className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600"
+          onClick={() => setIsModalOpen(true)} // Open the modal
+        >
           Book Now
         </button>
       </div>
 
-      {/* Image and Options Section */}
+      {/* Image Section */}
       <div className="lg:w-1/2 flex flex-col items-end justify-center">
-        <div className="relative ">
+        <div className="relative">
           <img
-            src={opendesk} // Replace with the actual image URL
+            src={opendesk}
             alt="Office Example"
             className="rounded-lg w-full"
           />
-          {/* <div className="absolute md:top-3/4 lg:top-3/2 top-1/2 -translate-y-1/2 -left-10 sm:-left-16 lg:-left-20 flex flex-col space-y-4">
-            {teamSizes.map((size, index) => (
-              <div
-                key={index}
-                className="flex items-center bg-white text-black rounded-lg px-4 py-2 shadow-lg"
-              >
-                <FaUsers className="text-gray-700 mr-2" />
-                <div>
-                  <p className="font-bold text-sm">{size.label}</p>
-                  <p className="text-gray-500 text-xs">{size.range}</p>
-                </div>
-              </div>
-            ))}
-          </div> */}
         </div>
       </div>
+
+      {/* Modal Section */}
+      {isModalOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="relative bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+            {/* Close Button */}
+            <button
+              className="absolute top-4 right-4 text-4xl text-black hover:text-red-500"
+              onClick={() => setIsModalOpen(false)} // Close the modal
+            >
+              &times;
+            </button>
+            <div className="bg-white  rounded-lg p-2 md:p-4 w-full max-w-md">
+              <h2 className="text-xl md:text-2xl font-semibold text-gray-800 text-center mb-6">
+                Quickly Locate Your Next <br /> Coworking Space
+              </h2>
+              <HeroForm />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

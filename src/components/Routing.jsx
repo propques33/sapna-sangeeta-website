@@ -5,6 +5,7 @@ import About from "./About.jsx";
 import Contact from "./Contact.jsx";
 import Term from "./Term.jsx";
 import Privacy from "./Privacy.jsx";
+import Thankyou from "./Thankyou.jsx";
 const Routing = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Routing = () => {
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms-conditions" element={<Term />} />
+        <Route path="/thankyou" element={<Thankyou />} />
       </Routes>
     </div>
   );
