@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const TermsAndConditions = () => {
+  useEffect(() => {
+    // Ensure scrolling to the top of the document when the component is mounted
+    window.scrollTo({
+      top: 0,
+      behavior: "auto", // You can use "auto" for instant scroll
+    });
+
+    // As a fallback, scroll the root element
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
-    <div className="bg-black text-white py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-black text-white py-16 px-6 ">
+      <div className="max-w-6xl mx-auto pt-10">
         {/* Title Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-orange-600">

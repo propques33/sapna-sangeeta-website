@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
 import Term from "./Term.jsx";
+import Privacy from "./Privacy.jsx";
 const Routing = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Routing = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms-conditions" element={<Term />} />
       </Routes>
     </div>

@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const AboutUs = () => {
+    useEffect(() => {
+      // Ensure scrolling to the top of the document when the component is mounted
+      window.scrollTo({
+        top: 0,
+        behavior: "auto", // You can use "auto" for instant scroll
+      });
+
+      // As a fallback, scroll the root element
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, []);
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-black  text-white">
       {/* Hero Section */}
-      <section className="relative text-center py-16 px-6 bg-black">
-        <h1 className="text-4xl font-bold text-orange-500">About Us.</h1>
+      <section className="relative text-center py-16 px-6  bg-black">
+        <h1 className="text-4xl font-bold text-orange-500 mt-20">About Us.</h1>
         <p className="mt-4 text-lg">
           A landmark of cinema and business, merging creativity, fun, and
           commercial opportunities under one roof.

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaWifi,
   FaCoffee,
@@ -45,6 +45,7 @@ const Amenities = () => {
       label: "Cleaning",
     },
   ];
+
 
   return (
     <div className="bg-white py-12 px-6">

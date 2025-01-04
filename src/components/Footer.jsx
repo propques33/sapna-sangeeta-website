@@ -5,11 +5,12 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import footerlogo from '../assets/footerlogo.png'
+import footerlogo from "../assets/footerlogo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-10 px-6">
+    <footer className="bg-black text-gray-300 py-10 px-6 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo Section */}
         <div>
@@ -32,13 +33,19 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
           <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
-          <ul className="space-y-3">
-            <li className="hover:text-orange-500 cursor-pointer">
-              Privacy Policy
-            </li>
-            <li className="hover:text-orange-500 cursor-pointer">
+          <ul className="space-y-3 flex flex-col">
+            <Link
+              to="/privacy"
+              className="hover:text-orange-500 cursor-pointer"
+            >
+              Privacy Polcy
+            </Link>
+            <Link
+              to="/terms-conditions"
+              className="hover:text-orange-500 cursor-pointer"
+            >
               Terms & Conditions
-            </li>
+            </Link>
             {/* <li className="hover:text-orange-500 cursor-pointer">Disclaimer</li> */}
           </ul>
         </div>

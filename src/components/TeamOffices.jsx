@@ -20,7 +20,7 @@ const TeamOffices = () => {
         </h1>
         <p className="text-gray-400 mt-4">
           No matter how many people you need to accommodate, we have offices
-          that are perfect for any team size, ranging from two to 100+ people or
+          that are perfect for any team size, ranging from two to 40+ people or
           more.
         </p>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
